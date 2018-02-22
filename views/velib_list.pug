@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 #{title}
+  ul
+  each velib in velib_list
+    li
+      #{velib.number}  #{velib.name})
+  else
+    li There are no Velibs.
